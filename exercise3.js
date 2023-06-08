@@ -5,22 +5,21 @@ for(let i=0;i<students.length;i++){
     console.log(students[i]);
 }
 
+//or
 for(let i in students){
     console.log(students[i]);
 }
 
 //remove
-console.log(students);
 students.splice(8,1);
 console.log(students);
 
 //indexOf
-console.log(students);
-students.indexOf("Pia");
-console.log(students);
+let result=students.indexOf("Pia");
+console.log(result);
+
 
 //Add a new student
-console.log(students);
 students.push("Fey");
 console.log(students)
 
