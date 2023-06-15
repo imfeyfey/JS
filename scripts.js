@@ -36,3 +36,22 @@ var presidents = [
     details: '1961-1965',
   },
 ];
+
+let imageVariable = document.createElement('img');
+imageVariable.setAttribute('src','logo.png');
+document.querySelector('#root').appendChild(imageVariable);
+
+for (let i=0;i<presidents.length; i++) {
+  let divE = document.createElement('div');
+  divE.setAttribute('class','card');
+  
+  let h1 =document.createElement('h1');
+  divE.appendChild(h1);
+  h1.textContent = presidents[i].name;
+
+  let p =document.createElement('p');
+  divE.appendChild(p);
+  p.textContent = presidents[i].details;
+
+  document.querySelector('#root').appendChild(divE);
+}
